@@ -15,10 +15,10 @@
   // we update the name, this will no longer work ¯\_(ツ)_/¯
   // Also, if you are reading this come join us at https://veganhacktivists.org!
   window.onload = function () {
-    const [$el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
+    const [, $el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
 
     if ($el) {
-      const $el.parentNode.childNodes[0].click();
+      $el.parentNode.childNodes[0].click();
     }
   }
 </script>
