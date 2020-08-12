@@ -66,10 +66,7 @@ div.content {
 <body>
 
 <div class="sidebar">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+<img src="https://i.imgur.com/KYMGdJP.png">
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
