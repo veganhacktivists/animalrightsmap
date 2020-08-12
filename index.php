@@ -10,13 +10,16 @@
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
 	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-	<script type="text/javascript">
+<script type="text/javascript">
   // Hack to open the sidebar by default. Whenever Google updates its UI or
   // we update the name, this will no longer work ¯\_(ツ)_/¯
   // Also, if you are reading this come join us at https://veganhacktivists.org!
   window.onload = function () {
-    const $el = document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']");
-    Array.from($el)[1].parentNode.childNodes[0].click();
+    const [$el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
+
+    if ($el) {
+      const $el.parentNode.childNodes[0].click();
+    }
   }
 </script>
 </body>
