@@ -23,4 +23,9 @@
   }
 </script>
 </body>
+<style>
+.dIxMhd-bN97Pc-b3rLgd {
+	display: none;
+}
+</style>
 </html>
