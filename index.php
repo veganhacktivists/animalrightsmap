@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<head>
-    <title>Animal Rights Activism Map - The largest map of animal rights organization groups!</title>
-    <link rel="shortcut icon" href="favicon.ico" />
-    <style>
-       html, body {
-           height: 100%;
-       }
-    </style>
-</head>
+
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animal Rights Activism Map - The largest map of animal rights organization groups!</title>
+    <link rel="shortcut icon" href="favicon.ico" />
 <style>
 body {
   margin: 0;
