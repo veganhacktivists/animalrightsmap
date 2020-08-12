@@ -67,10 +67,11 @@ div.content {
 <body>
 
 <div class="sidebar" style="background-color: #272525;">
-<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;">
-  <a href="#about">About</a>
-    <a href="#about">About</a>
-	  <a href="#about">About</a>
+<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -10px;">
+  <a href="#about">Home</a>
+    <a href="#about">Learn more</a>
+	  <a href="#about">Submit a group</a>
+	  	  <a href="#about">Donate</a>
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
