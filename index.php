@@ -9,9 +9,18 @@
     </style>
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
-<iframe is="x-frame-bypass" src="https://www.google.com/maps/d/viewer?hl=de&mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5&ll=38.56165186366597%2C21.865702589096458&z=4" style="width:100%; height:100vh;" frameborder="0"></iframe>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="module" src="https://unpkg.com/x-frame-bypass"></script>
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+<script type="text/javascript">
+  // Hack to open the sidebar by default. Whenever Google updates its UI or
+  // we update the name, this will no longer work ¯\_(ツ)_/¯
+  // Also, if you are reading this come join us at https://veganhacktivists.org!
+  window.onload = function () {
+    const [, $el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
+
+    if ($el) {
+      $el.parentNode.childNodes[0].click();
+    }
+  }
+</script>
 </body>
 </html>
