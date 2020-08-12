@@ -24,9 +24,10 @@
 </script>
 </body>
 <script>
-$('iframe').load( function() {
-    $('iframe').contents().find("head")
-      .append($("<style type='text/css'>  .dIxMhd-bN97Pc-b3rLgd {display:none;}  </style>"));
+$(document).ready(function () {
+    $('iframe').on('load', function() {
+        $("iframe").contents().find("dIxMhd-bN97Pc-b3rLgd").css("display", "none");
+    }); 
 });
 </script>
 </html>
