@@ -24,7 +24,8 @@ body {
 
 .sidebar a {
   display: block;
-  color: black;
+      background-color: #a12e38;
+    color: white;
   padding: 16px;
   text-decoration: none;
 }
