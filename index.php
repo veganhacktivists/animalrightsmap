@@ -23,9 +23,10 @@
   }
 </script>
 </body>
-<style>
-.dIxMhd-bN97Pc-b3rLgd {
-	display: none;
-}
-</style>
+<script>
+$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>  .dIxMhd-bN97Pc-b3rLgd {display:none;}  </style>"));
+});
+</script>
 </html>
