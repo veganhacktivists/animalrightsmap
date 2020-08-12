@@ -72,7 +72,7 @@ div.content {
   <a href="#about">About</a>
 </div>
 
-<div class="content" style="margin:0px;padding:0px;overflow:hidden">
+<div class="content" style="padding:0px;overflow:hidden">
 	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 <script type="text/javascript">
   // Hack to open the sidebar by default. Whenever Google updates its UI or
