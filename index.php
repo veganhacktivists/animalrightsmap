@@ -65,8 +65,11 @@ div.content {
 </head>
 <body>
 
-<div class="sidebar">
-<img src="https://i.imgur.com/KYMGdJP.png">
+<div class="sidebar" style="background-color: #272525;">
+<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;">
+  <a href="#about">About</a>
+    <a href="#about">About</a>
+	  <a href="#about">About</a>
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
