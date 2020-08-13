@@ -26,7 +26,7 @@ body {
   display: block;
       background-color: #a12e38;
     color: white;
-    padding: 10px 16px 16px 16px;
+    padding: 12px 16px 12px 16px;
   text-decoration: none;
 }
  
