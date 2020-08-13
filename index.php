@@ -24,6 +24,9 @@ body {
 
 .sidebar a {
   display: block;
+      background-color: #a12e38;
+    color: white;
+  padding: 16px;
   text-decoration: none;
 }
  
@@ -65,10 +68,10 @@ div.content {
 
 <div class="sidebar" style="background-color: #272525;">
 <img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -4px;">
-  <a href="https://animalrightsmap.org" style="background-color: #a12e38;color: white;padding: 16px;">Home</a>
-    <a href="#" style="background-color: #a12e38;color: white;padding: 16px;">Learn more</a>
-	  <a href="mailto:map@veganhacktivists.org" style="background-color: #a12e38;color: white;padding: 16px;">Submit a group</a>
-	  	  <a href="https://www.patreon.com/veganhacktivists"  style="background-color: #a12e38;color: white;padding: 16px;"target="_blank">♡ Donate</a>
+  <a href="https://animalrightsmap.org">Home</a>
+    <a href="#">Learn more</a>
+	  <a href="mailto:map@veganhacktivists.org">Submit a group</a>
+	  	  <a href="https://www.patreon.com/veganhacktivists" target="_blank">♡ Donate</a>
 		  <p style="
     padding: 13px;
     color: white;
