@@ -76,7 +76,13 @@ div.content {
     padding: 13px;
     color: white;
     line-height: 27px;
-">With over 2,500 groups, browse the largest collection of animal rights activist groups all in one single map! </p>
+">Browse the largest collection of animal rights activist groups from around the world, in one single map! </p>
+
+<center><a href="https://veganhacktivists.org/" target="_blank"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a><br>
+
+    <p style="
+    line-height: 25px;
+          ">A project by the <a href="https://veganhacktivists.org/" target="_blank"><u>Vegan Hacktivists</u></p></a></center>
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
