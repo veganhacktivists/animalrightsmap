@@ -56,7 +56,8 @@ div.content {
     height: auto;
     position: relative;
   }
-  .sidebar a {float: left;}
+  .sidebar a {text-align: center;
+    float: none;}
   div.content {margin-left: 0;}
 }
 
