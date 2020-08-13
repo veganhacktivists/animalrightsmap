@@ -71,7 +71,7 @@ div.content {
 <a href="https://animalrightsmap.org">Home</a>
 <a href="#">Learn more</a>
 <a href="mailto:map@veganhacktivists.org">Submit a group</a>
-<a href="https://www.patreon.com/veganhacktivists" target="_blank">♡ Donate</a>
+<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
 
 
 <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, in one single map! </p>
