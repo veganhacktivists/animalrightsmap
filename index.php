@@ -96,19 +96,7 @@ div.content {
 
 <div class="content" style="padding:0px;overflow:hidden">
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
-<script type="text/javascript">
-  // Hack to open the sidebar by default. Whenever Google updates its UI or
-  // we update the name, this will no longer work ¯\_(?)_/¯
-  // Also, if you are reading this come join us at https://veganhacktivists.org!
-  window.onload = function () {
-    const [, $el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
-
-    if ($el) {
-      $el.parentNode.childNodes[0].click();
-    }
-  }
-</script>
+<iframe width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false"></iframe><p><a href="//umap.openstreetmap.fr/en/map/animal-rights-map_487135">See full screen</a></p>
 
 </div>
 
