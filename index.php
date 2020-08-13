@@ -68,10 +68,10 @@ div.content {
 
 <div class="sidebar" style="background-color: #272525;">
 <img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -4px;">
-  <a href="#about">Home</a>
-    <a href="#about">Learn more</a>
-	  <a href="#about">Submit a group</a>
-	  	  <a href="#about">Donate ♡</a>
+  <a href="https://animalrightsmap.org">Home</a>
+    <a href="#">Learn more</a>
+	  <a href="mailto:map@veganhacktivists.org">Submit a group</a>
+	  	  <a href="https://www.patreon.com/veganhacktivists" target="_blank">♡ Donate</a>
 		  <p style="
     padding: 13px;
     color: white;
