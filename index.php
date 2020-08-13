@@ -67,11 +67,16 @@ div.content {
 <body>
 
 <div class="sidebar" style="background-color: #272525;">
-<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -10px;">
+<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -4px;">
   <a href="#about">Home</a>
     <a href="#about">Learn more</a>
 	  <a href="#about">Submit a group</a>
 	  	  <a href="#about">Donate</a>
+		  <p style="
+    padding: 13px;
+    color: white;
+    line-height: 24px;
+">With over 2,500 groups, browse the largest collection of animal rights activist groups all located in one single map! </p>
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
