@@ -71,7 +71,7 @@ div.content {
   <a href="#about">Home</a>
     <a href="#about">Learn more</a>
 	  <a href="#about">Submit a group</a>
-	  	  <a href="#about">Donate</a>
+	  	  <a href="#about">Donate ♡</a>
 		  <p style="
     padding: 13px;
     color: white;
@@ -83,7 +83,7 @@ div.content {
 	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 <script type="text/javascript">
   // Hack to open the sidebar by default. Whenever Google updates its UI or
-  // we update the name, this will no longer work ¯\_(ツ)_/¯
+  // we update the name, this will no longer work ¯\_(?)_/¯
   // Also, if you are reading this come join us at https://veganhacktivists.org!
   window.onload = function () {
     const [, $el] = Array.from(document.querySelectorAll("[aria-label='Animal Rights Map - VeganHacktivists.org']"));
