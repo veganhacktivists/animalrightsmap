@@ -75,13 +75,6 @@ div.content {
 
 .footermobile {
 	display: block;
-	  margin: 0;
-  padding: 0;
-  width: 215px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
 }
   
   
@@ -132,13 +125,13 @@ div.content {
 
 <div class="footermobile" style="background-color: #272525;"><center>
 
-<a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a>
+<a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="padding-top: 25px;width: 100px;"></a>
 
-<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a>
+<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;color:#fff;" target="_blank"><u>Vegan Hacktivists</u></p></a>
 
-<a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+<a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;color:#fff;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 			
-<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;color:#fff;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
 </center></div>
 
