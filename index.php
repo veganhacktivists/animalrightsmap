@@ -89,9 +89,9 @@ div.content {
 
 <p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a>
 
-<a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;"></i></a>
+<a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 			
-<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;"></i></a>
+<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
 </center>
 
