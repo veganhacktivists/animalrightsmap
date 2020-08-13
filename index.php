@@ -66,7 +66,7 @@ div.content {
 </head>
 <body>
 
-<div class="sidebar" style="background-color: #272525;">
+<div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
 <img src="https://i.imgur.com/KYMGdJP.png" style="width: 215px;margin-bottom: -5px;">
 <a href="https://animalrightsmap.org">Home</a>
 <a href="#">Learn more</a>
