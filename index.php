@@ -26,7 +26,7 @@ body {
   display: block;
       background-color: #a12e38;
     color: white;
-  padding: 16px;
+    padding: 10px 16px 16px 16px;
   text-decoration: none;
 }
  
@@ -76,7 +76,7 @@ div.content {
 
 <p style="padding: 13px;color: white;line-height: 27px;">Browse the largest collection of animal rights activist groups from around the world, in one single map! </p>
 <center><a href="https://veganhacktivists.org/" target="_blank" style="background-color: #a12e38;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a><br>
-<p style="background-color: #272525 !important; line-height: 0px;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a></center>
+<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a></center>
 
 
 </div>
