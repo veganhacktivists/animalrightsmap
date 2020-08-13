@@ -67,7 +67,7 @@ div.content {
 <body>
 
 <div class="sidebar" style="background-color: #272525;">
-<img src="https://i.imgur.com/KYMGdJP.png" style="width: 200px;margin-bottom: -4px;">
+<img src="https://i.imgur.com/KYMGdJP.png" style="width: 215px;margin-bottom: -5px;">
 <a href="https://animalrightsmap.org">Home</a>
 <a href="#">Learn more</a>
 <a href="mailto:map@veganhacktivists.org">Submit a group</a>
