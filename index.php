@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Animal Rights Activism Map - The largest map of animal rights organization groups!</title>
     <link rel="shortcut icon" href="favicon.ico" />
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <style>
 body {
   margin: 0;
@@ -76,7 +78,16 @@ div.content {
 
 <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
 <center><a href="https://veganhacktivists.org/" target="_blank" style="background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a>
-<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a></center>
+<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a>
+
+<a href="https://www.instagram.com/veganhacktivists/">
+                <i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;"></i>
+            </a>
+            <a href="https://www.patreon.com/veganhacktivists">
+                <i class="fas fa-heart" style="font-size:30px;padding-right: 10px;"></i>
+            </a>
+			
+			</center>
 
 
 </div>
