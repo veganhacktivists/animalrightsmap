@@ -78,7 +78,7 @@ div.content {
     line-height: 27px;
 ">Browse the largest collection of animal rights activist groups from around the world, in one single map! </p>
 
-<center><a href="https://veganhacktivists.org/" target="_blank"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a><br>
+<center><a href="https://veganhacktivists.org/" target="_blank"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"><br>
 
     <p style="
     line-height: 25px;
