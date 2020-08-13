@@ -72,6 +72,10 @@ div.content {
 .footer {
 	display: none;
 }
+
+.footermobile {
+	display: block;
+}
   
   
   
