@@ -16,6 +16,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.footermobile {
+	display: none;
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -114,6 +118,18 @@ div.content {
 <div class="content" style="padding:0px;overflow:hidden">
 <iframe width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/de/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=false&embedControl=null&datalayersControl=expanded&onLoadPanel=caption&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 </div>
+
+<div class="footermobile"><center>
+
+<a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a>
+
+<p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a>
+
+<a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+			
+<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+
+</center></div>
 
 </body>
 </html>
