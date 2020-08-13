@@ -51,15 +51,29 @@ div.content {
 }
 
 @media screen and (max-width: 700px) {
-  .sidebar {
+.sidebar {
     width: 100%;
     height: auto;
     position: relative;
-  }
-  .sidebar a {text-align: center;
-    float: none;}
-  div.content {margin-left: 0;}
 }
+  
+.sidebar a {text-align: center;
+    float: none;
+}
+
+div.content {
+	margin-left: 0;
+}
+
+.footer {
+	display: none;
+}
+  
+  
+  
+}
+
+
 
 @media screen and (max-width: 400px) {
   .sidebar a {
@@ -83,7 +97,7 @@ div.content {
 
 <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
 
-<center>
+<div class="footer"><center>
 
 <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a>
 
@@ -93,7 +107,7 @@ div.content {
 			
 <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
-</center>
+</center></div>
 
 </div>
 
