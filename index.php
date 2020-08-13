@@ -45,7 +45,7 @@ body {
 }
 
 div.content {
-  margin-left: 200px;
+ margin-left: 215px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -70,7 +70,7 @@ div.content {
 </head>
 <body>
 
-<div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */overflow-y: hidden;">
+<div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
 <img src="https://i.imgur.com/KYMGdJP.png" style="width: 215px;margin-bottom: -5px;">
 <a href="https://animalrightsmap.org" style="font-size: 18px;">Home</a>
 <a href="#" style="font-size: 18px;">Learn more</a>
