@@ -75,8 +75,8 @@ div.content {
 		  <p style="
     padding: 13px;
     color: white;
-    line-height: 24px;
-">With over 2,500 groups, browse the largest collection of animal rights activist groups all located in one single map! </p>
+    line-height: 27px;
+">With over 2,500 groups, browse the largest collection of animal rights activist groups all in one single map! </p>
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
