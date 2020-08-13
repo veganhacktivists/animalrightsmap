@@ -70,10 +70,10 @@ div.content {
 
 <div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
 <img src="https://i.imgur.com/KYMGdJP.png" style="width: 215px;margin-bottom: -5px;">
-<a href="https://animalrightsmap.org">Home</a>
-<a href="#">Learn more</a>
-<a href="mailto:map@veganhacktivists.org">Submit a group</a>
-<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
+<a href="https://animalrightsmap.org" style="font-size: 18px;">Home</a>
+<a href="#" style="font-size: 18px;">Learn more</a>
+<a href="mailto:map@veganhacktivists.org" style="font-size: 18px;">Submit a group</a>
+<a href="https://www.patreon.com/veganhacktivists" target="_blank" style="font-size: 18px;padding: 10px 16px 12px 16px;">♡ Donate</a>
 
 
 <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
