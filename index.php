@@ -94,8 +94,7 @@ div.content {
 
 </div>
 
-<div class="content" style="padding:0px;overflow:hidden">
-<div id='map' style='width: 400px; height: 300px;'></div>
+<div id='map' style='padding:0px;overflow:hidden'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pbWFscmlnaHRzbWFwIiwiYSI6ImNrZHNseW43NzE0NDAyeG1zczR6NGxyYmMifQ.ehhW_TXPpPwK9BbfZzhLug';
 var map = new mapboxgl.Map({
@@ -103,7 +102,6 @@ container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11'
 });
 </script>
-</div>
 
 </body>
 </html>
