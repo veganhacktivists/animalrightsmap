@@ -95,8 +95,16 @@ div.content {
 </div>
 
 <div class="content" style="padding:0px;overflow:hidden">
+<div id='map' style='width: 100%; height: 100vh;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pbWFscmlnaHRzbWFwIiwiYSI6ImNrZHNseW43NzE0NDAyeG1zczR6NGxyYmMifQ.ehhW_TXPpPwK9BbfZzhLug';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+<!--<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1riR6Rl0KTltNrzpfddesLauOwk0QnIs5" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 <script type="text/javascript">
   // Hack to open the sidebar by default. Whenever Google updates its UI or
   // we update the name, this will no longer work ¯\_(?)_/¯
@@ -109,7 +117,7 @@ div.content {
     }
   }
 </script>
-
+-->
 </div>
 
 </body>
