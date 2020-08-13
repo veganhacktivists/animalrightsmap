@@ -75,6 +75,13 @@ div.content {
 
 .footermobile {
 	display: block;
+	  margin: 0;
+  padding: 0;
+  width: 215px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
   
   
@@ -123,7 +130,7 @@ div.content {
 <iframe width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/de/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=false&embedControl=null&datalayersControl=expanded&onLoadPanel=caption&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
 </div>
 
-<div class="footermobile"><center>
+<div class="footermobile" style="background-color: #272525;"><center>
 
 <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/xSHDo4E.png" style="width: 100px;"></a>
 
