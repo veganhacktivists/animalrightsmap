@@ -100,7 +100,7 @@ div.content {
 mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pbWFscmlnaHRzbWFwIiwiYSI6ImNrZHNseW43NzE0NDAyeG1zczR6NGxyYmMifQ.ehhW_TXPpPwK9BbfZzhLug';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/animalrightsmap/ckdsoof6b15iy19nztyzyfmab'
+style: 'mapbox://styles/animalrightsmap/ckdsoof6b15iy19nztyzyfmab?optimize=true'
 });
 </script>
 
