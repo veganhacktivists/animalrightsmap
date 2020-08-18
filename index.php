@@ -108,7 +108,7 @@ div.content {
 
 <div class="sidebarlinks">
 <a href="https://animalrightsmap.org" style="font-size: 18px;">Home</a>
-<a href="#" style="font-size: 18px;">Learn more</a>
+<a href="https://veganactivism.org/" style="font-size: 18px;">Learn more</a>
 <a href="mailto:map@veganhacktivists.org" style="font-size: 18px;">Submit a group</a>
 <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="font-size: 18px;padding: 10px 16px 12px 16px;">♡ Donate</a>
 </div>
