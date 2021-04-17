@@ -1,7 +1,7 @@
 # Animal Rights Map
 
 [![](https://img.shields.io/badge/community-discord-black?style=flat-square&labelColor=000&color=7289da)](https://discord.com/channels/829144774929940550/829184713394487326)
-[![](https://img.shields.io/badge/sponsor-patreon-black?style=flat-square&labelColor=000&color=ff424d)](http://patreon.com/veganhacktivists)
+[![](https://img.shields.io/badge/sponsor-patreon-black?style=flat-square&labelColor=000&color=ff424d)](https://patreon.com/veganhacktivists)
 [![](https://img.shields.io/badge/trello-vh--playground-black?style=flat-square&labelColor=000&color=026aa7)](https://trello.com/b/J3JW43mY/vh-playground)
 [![](https://img.shields.io/badge/website-animalrightsmap.org-black?style=flat-square&labelColor=000&color=ff0097)](https://animalrightsmap.org)
 
