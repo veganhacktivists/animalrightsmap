@@ -1,0 +1,54 @@
+/* based on https://github.com/umap-project/umap/blob/88cd3e8cf0b24516ba62fbea4a7f58e6038e2e0f/umap/static/umap/map.css */
+.explore-map-icon .icon_arrow {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 16px solid #2270B5;
+  height: 0;
+  left: 6px;
+  position: relative;
+  top: -4px;
+  width: 0;
+}
+.explore-map-icon .icon_container {
+  background-color: #2470B5;
+  border-radius: 16px 16px 16px 16px;
+  box-shadow: 6px 13px 8px -4px black;
+  height: 32px;
+  line-height: 32px;
+  opacity: 0.9;
+  text-align: center;
+  width: 32px;
+}
+.explore-map-icon .icon_container img {
+  vertical-align: middle;
+  max-width: 24px !important;
+  max-height: 24px!important;
+}
+.explore-map-icon .icon_container span {
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+}
+
+.marker-cluster {
+  /* `!important` is needed to overwrite the default colors from MarkerCluster.Default.css */
+  display: block;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+.marker-cluster div {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+}
+.marker-cluster span {
+  /* background-color: red !important; */
+  line-height: 30px;
+  /* color: white; */
+}
