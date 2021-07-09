@@ -124,7 +124,8 @@ function parseQueryString() {
 
 async function fetchGroups(backend) {
   const url = `${backend}/api/v1/chapters.json`
-  const res = await fetch(url, {})
+  // `credentials:include` makes staging's basic auth work
+  const res = await fetch(url, {credentials: 'include'})
   return await res.json();
 }
 
