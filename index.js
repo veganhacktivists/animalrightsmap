@@ -78,7 +78,7 @@ async function buildActivistHubMap(el, backend) {
       popupLink2.textContent = group.organisation.name
       popupLink3.textContent = group.location.city
       let popupDesc = Leaflet.DomUtil.create('p', '', popup)
-      popupDesc.textContent = address
+      popupDesc.textContent = group.about
 
       let tooltip = Leaflet.DomUtil.create('div', '')
       let tooltip1 = Leaflet.DomUtil.create('div', '', tooltip)
