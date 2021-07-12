@@ -70,23 +70,17 @@ async function buildActivistHubMap(el, backend) {
       let address = [group.location.city, group.location.state].join(', ')
 
       let popup = Leaflet.DomUtil.create('div', '')
-      let popupLink = Leaflet.DomUtil.create('p', '', popup)
-      let popupLink1 = Leaflet.DomUtil.create('div', '', popupLink)
-      let popupLink2 = Leaflet.DomUtil.create('div', '', popupLink)
-      let popupLink3 = Leaflet.DomUtil.create('div', '', popupLink)
-      popupLink1.textContent = group.name
-      popupLink2.textContent = group.organisation.name
-      popupLink3.textContent = group.location.city
+      let popupLink = Leaflet.DomUtil.create('a', '', popup)
+      let popupLink1 = Leaflet.DomUtil.create('b', '', popupLink)
+      popupLink1.textContent = group.display_name
+      popupLink.href = group.url
+      popupLink.target = "_blank"
+      popupLink.style.color = "black"
       let popupDesc = Leaflet.DomUtil.create('p', '', popup)
-      popupDesc.textContent = group.about
+      popupDesc.innerHTML = DOMPurify.sanitize(marked(group.about))
 
       let tooltip = Leaflet.DomUtil.create('div', '')
-      let tooltip1 = Leaflet.DomUtil.create('div', '', tooltip)
-      let tooltip2 = Leaflet.DomUtil.create('div', '', tooltip)
-      let tooltip3 = Leaflet.DomUtil.create('div', '', tooltip)
-      tooltip1.textContent = group.display_name
-      tooltip2.textContent = group.organisation.name
-      tooltip3.textContent = address
+      tooltip.textContent = group.display_name
 
       // https://github.com/umap-project/umap/blob/88cd3e8cf0b24516ba62fbea4a7f58e6038e2e0f/umap/static/umap/js/umap.icon.js
       let marker = Leaflet.marker([group.location.latitude, group.location.longitude], {
