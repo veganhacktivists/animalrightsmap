@@ -124,4 +124,64 @@ async function fetchGroups(backend) {
   return await res.json();
 }
 
+async function sendEmail (data) {
+  return await axios.request({
+    url: 'https://api.mailgun.net/v3/animalrightsmap.org/messages',
+    method: 'POST',
+    auth: {
+      username: 'api',
+      password: document.querySelector('meta[name=MAILGUN_API_KEY]').content
+    },
+    params: data,
+  })
+}
+
+function displayError (error) {
+  Swal.showValidationMessage(error);
+}
+
+async function openGroupSubmissionModal () {
+  const { value: values } = await Swal.fire({
+    template: '#group-submission-modal',
+    showLoaderOnConfirm: true,
+    preConfirm: async () => {
+      const name = document.getElementById('name').value
+      const email = document.getElementById('email').value
+      const groupNames = document.getElementById('group-names').value
+      const socialMediaLinks = document.getElementById('social-media-links').value
+      const regions = document.getElementById('regions').value
+      const message = document.getElementById('message').value
+
+      try {
+        await sendEmail({
+          to: 'map@veganhacktivists.org',
+          from: email,
+          subject: 'New Group Submission',
+          html: `
+          <b>Name</b>: ${name}<br>
+          <b>Email</b>: ${name}<br>
+          <b>Group Name(s)</b>: ${groupNames}<br>
+          <b>Social Media Link(s)</b>: ${socialMediaLinks}<br>
+          <b>City/Region(s)</b>: ${regions}<br>
+          <b>Message</b>: ${message}<br>
+          `
+        });
+      } catch (error) {
+        if (error.response.data.message === "'from' parameter is not a valid address. please check documentation") {
+          displayError('The email you provided is not valid.');
+        } else {
+          displayError('Oops! Something went wrong. Try reaching us directly at map@veganhacktivists.org');
+        }
+      }
+    }
+  });
+
+  if (values) {
+    Swal.fire({
+      template: '#group-submission-success-toast',
+      toast: true,
+    })
+  }
+}
+
 window.onload = main;
