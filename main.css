@@ -52,3 +52,77 @@
   line-height: 30px;
   /* color: white; */
 }
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.footermobile {
+  display: none;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 215px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+      background-color: #a12e38;
+    color: white;
+    padding: 12px 16px 12px 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #272525;
+  color: white;
+}
+
+div.content {
+ margin-left: 215px;
+  padding: 1px 16px;
+  height: 100vh;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .sidebar a {text-align: center;
+      float: none;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .footermobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
