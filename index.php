@@ -29,6 +29,12 @@
       integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
       crossorigin=""/>
 
+  <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"
+      integrity="sha256-DVQ37PYX3vJRSJgdfRDBKog6O3HoUVA812fyGtiutRU="
+      crossorigin=""></script>
+  <script src="https://unpkg.com/sweetalert2@11.1.6/dist/sweetalert2.all.min.js"
+      integrity="sha256-rchCQnaUfNYpykQA/4sXEQNe7eOSc8mmoGauwzRfqHQ="
+      crossorigin=""></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
@@ -47,11 +53,11 @@
     <img src="https://i.imgur.com/KYMGdJP.png" style="width: 100%;margin-bottom: -5px;">
 
     <div class="sidebarlinks">
-      <a href="https://animalrightsmap.org" style="font-size: 18px;">Home</a>
-      <a href="https://activisthub.org/" style="font-size: 18px;">Track your Impact</a>
-      <a href="https://veganhacktivists.org/grants" style="font-size: 18px;">Get Funding</a>
-      <a href="https://veganhacktivists.org/services#contact-us" style="font-size: 18px;">Submit a group</a>
-      <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="font-size: 18px;padding: 10px 16px 12px 16px;">♡ Donate</a>
+      <a href="https://animalrightsmap.org">Home</a>
+      <a href="https://activisthub.org/">Track your Impact</a>
+      <a href="https://veganhacktivists.org/grants">Get Funding</a>
+      <button style="font-size: 18px;" onClick="openGroupSubmissionModal()">Submit a group</button>
+      <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
     </div>
 
     <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
@@ -86,5 +92,32 @@
     </center>
   </div>
 
+  <template id="group-submission-modal">
+    <swal-title>
+      Submit a group
+    </swal-title>
+    <swal-button type="confirm">
+      Send
+    </swal-button>
+    <swal-button type="cancel">
+      Cancel
+    </swal-button>
+    <swal-html>
+      <form id="group-submission-form">
+        <input required type="text" id="name" class="swal2-input" placeholder="Your name">
+        <input required type="email" id="email" class="swal2-input" placeholder="Your email">
+        <input required type="text" id="group-names" class="swal2-input" placeholder="Group name(s)">
+        <input required type="text" id="social-media-links" class="swal2-input" placeholder="Social media link(s)">
+        <input required type="text" id="regions" class="swal2-input" placeholder="City/Region(s)">
+        <textarea id="message" class="swal2-input" placeholder="Anything else?"></textarea>
+      </form>
+    </swal-html>
+  </template>
+
+  <template id="group-submission-success">
+    <swal-html>
+      Thank you for your contribution! 💚
+    </swal-html>
+  </template>
 </body>
 </html>
