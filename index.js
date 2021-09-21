@@ -1,6 +1,6 @@
 async function main() {
   let qs = parseQueryString(document.location.search)
-  console.log(qs)
+
   // demo activist hub data with the appropriate querystring flag - otherwise, use umap data
   if (qs.backend && validBackends[qs.backend]) {
     document.getElementById('umap').style.display = 'none';
@@ -66,6 +66,7 @@ async function buildActivistHubMap(el, backend) {
         })
       },
     });
+
     for (let group of org.groups) {
       let address = [group.location.city, group.location.state].join(', ')
 
