@@ -59,9 +59,9 @@ async function buildActivistHubMap(el, backend) {
           className: 'leaflet-marker-icon marker-cluster',
           iconSize: [40,40],
           html: `
-              <div style="background-color: ${org.color}; color: ${org.textColor}">
-                <span>${cluster.getChildCount()}</span>
-              </div>
+            <div style="background-color: ${org.color}; color: ${org.textColor}">
+              <span>${cluster.getChildCount()}</span>
+            </div>
           `,
         })
       },
@@ -98,8 +98,8 @@ async function buildActivistHubMap(el, backend) {
           `
         }),
       })
-      .bindPopup(popup)
-      .bindTooltip(tooltip)
+        .bindPopup(popup)
+        .bindTooltip(tooltip)
 
       markers.addLayer(marker)
     }
@@ -110,10 +110,10 @@ async function buildActivistHubMap(el, backend) {
 function parseQueryString() {
   return Object.fromEntries(
     document.location.search
-      .replace(/^\?/, '')
-      .split('&')
-      .filter(pair => !!pair)
-      .map(pair => pair.split('=').map(decodeURIComponent))
+    .replace(/^\?/, '')
+    .split('&')
+    .filter(pair => !!pair)
+    .map(pair => pair.split('=').map(decodeURIComponent))
   )
 }
 
@@ -122,6 +122,70 @@ async function fetchGroups(backend) {
   // `credentials:include` makes staging's basic auth work
   const res = await fetch(url, {credentials: 'include'})
   return await res.json();
+}
+
+async function sendEmail (data) {
+  return await axios.request({
+    url: '/mail.php',
+    method: 'POST',
+    params: data,
+  })
+}
+
+function displayError (error) {
+  Swal.showValidationMessage(error);
+}
+
+async function openGroupSubmissionModal () {
+  await Swal.fire({
+    template: '#group-submission-modal',
+    showLoaderOnConfirm: true,
+    allowOutsideClick: () => !Swal.isLoading(),
+    preConfirm: async () => {
+      const form = document.getElementById("group-submission-form")
+      if (!form.checkValidity()) {
+        form.reportValidity()
+        displayError("The form is invalid ☹")
+
+      } else {
+        const name = document.getElementById('name').value
+        const email = document.getElementById('email').value
+        const groupNames = document.getElementById('group-names').value
+        const socialMediaLinks = document.getElementById('social-media-links').value
+        const regions = document.getElementById('regions').value
+        const message = document.getElementById('message').value
+
+        try {
+          await sendEmail({
+            to: 'map@veganhacktivists.org',
+            from: email,
+            subject: 'New Group Submission',
+            html: `
+              <b>Name</b>: ${name}<br>
+              <b>Email</b>: ${email}<br>
+              <b>Group Name(s)</b>: ${groupNames}<br>
+              <b>Social Media Link(s)</b>: ${socialMediaLinks}<br>
+              <b>City/Region(s)</b>: ${regions}<br>
+              <b>Message</b>: ${message}<br>
+              `
+          });
+
+        } catch (error) {
+          if (error.response.data.message === "'from' parameter is not a valid address. please check documentation") {
+            displayError('The email you provided is not valid.');
+          } else {
+            displayError('Oops! Something went wrong. Try reaching us directly at map@veganhacktivists.org');
+          }
+        }
+      }
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        template: '#group-submission-success',
+      })
+    }
+  });
 }
 
 window.onload = main;

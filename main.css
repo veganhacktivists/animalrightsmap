@@ -72,12 +72,19 @@ body {
   overflow: auto;
 }
 
-.sidebar a {
+.sidebar a, .sidebar button {
   display: block;
-      background-color: #a12e38;
-    color: white;
-    padding: 12px 16px 12px 16px;
+  background-color: #a12e38;
+  color: white;
+  padding: 12px 16px 12px 16px;
   text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar button {
+  border: none;
+  width: 100%;
+  text-align: left;
 }
 
 .sidebar a.active {
@@ -85,26 +92,28 @@ body {
   color: white;
 }
 
-.sidebar a:hover:not(.active) {
+.sidebar a:hover:not(.active), .sidebar button:hover {
   background-color: #272525;
   color: white;
+  cursor: pointer;
 }
 
 div.content {
- margin-left: 215px;
+  margin-left: 215px;
   padding: 1px 16px;
   height: 100vh;
 }
 
 @media screen and (max-width: 700px) {
   .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
+    width: 100%;
+    height: auto;
+    position: relative;
   }
 
-  .sidebar a {text-align: center;
-      float: none;
+  .sidebar a, .sidebar button {
+    text-align: center;
+    float: none;
   }
 
   div.content {
@@ -121,8 +130,17 @@ div.content {
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
+  .sidebar a, .sidebar button {
     text-align: center;
     float: none;
+  }
+
+  .swal2-html-container {
+    margin: auto;
+  }
+
+  .swal2-input {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
