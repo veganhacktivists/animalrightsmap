@@ -156,7 +156,7 @@ div.content {
 
 <div class="footermobile" style="background-color: #272525;"><center>
 
-<a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/Dn4T6BC.png" style="padding-top: 25px;width: 100px;"></a>
+<a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="https://i.imgur.com/S0jY6S6.png" style="padding-top: 25px;width: 100px;"></a>
 
 <p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;color:#fff;" target="_blank"><u>Vegan Hacktivists</u></p></a>
 
