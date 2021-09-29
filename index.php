@@ -47,7 +47,6 @@
   <link rel="stylesheet" href="/main.css" />
   <script src="/index.js"></script>
 </head>
-
 <body>
   <div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
     <img src="https://i.imgur.com/KYMGdJP.png" style="width: 100%;margin-bottom: -5px;">
