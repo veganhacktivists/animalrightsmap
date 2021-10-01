@@ -109,7 +109,7 @@
         <input required type="text" id="group-names" class="swal2-input" placeholder="Group name(s)">
         <input required type="text" id="social-media-links" class="swal2-input" placeholder="Social media link(s)">
         <input required type="text" id="regions" class="swal2-input" placeholder="City/Region(s)">
-        <textarea id="message" class="swal2-input" placeholder="Anything else?" style="font-family: sans-serif;padding: 10px;width: 284px;"></textarea>
+        <textarea id="message" class="swal2-input" placeholder="Anything else?"></textarea>
       </form>
     </swal-html>
   </template>

@@ -104,6 +104,19 @@ div.content {
   height: 100vh;
 }
 
+.swal2-input {
+  margin: 1em 0 0;
+  width: 100%;
+}
+textarea.swal2-input {
+  font-family: sans-serif;
+  padding-top: 0.75em;
+}
+
+.swal2-html-container {
+  padding: 1em;
+}
+
 .swal2-styled.swal2-confirm {
   background-color: #a12e38;
 }
