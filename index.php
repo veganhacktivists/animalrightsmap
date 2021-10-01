@@ -96,8 +96,8 @@
     <swal-title>
       Submit a group
     </swal-title>
-    <swal-button type="confirm" style="background-color:#a12e38;">
-    Submit group
+    <swal-button type="confirm">
+      Submit group
     </swal-button>
     <swal-button type="cancel">
       Cancel
