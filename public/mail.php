@@ -1,7 +1,12 @@
 <?php
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
+use Symfony\Component\Dotenv\Dotenv;
 use Mailgun\Mailgun;
+
+// Load environmental variables
+$dotenv = new Dotenv();
+$dotenv->load(__DIR__ . '../.env');
 
 $mg = Mailgun::create(getenv('MAILGUN_API_KEY'));
 
