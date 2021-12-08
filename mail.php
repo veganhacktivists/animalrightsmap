@@ -1,7 +1,12 @@
 <?php
 require 'vendor/autoload.php';
 
+use Dotenv\Dotenv;
 use Mailgun\Mailgun;
+
+// Load env variables
+$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 $mg = Mailgun::create(getenv('MAILGUN_API_KEY'));
 
