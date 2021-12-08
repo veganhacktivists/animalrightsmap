@@ -6,9 +6,9 @@ use Mailgun\Mailgun;
 
 // Load environmental variables
 $dotenv = new Dotenv();
-$dotenv->load(__DIR__ . '../.env');
+$dotenv->load(__DIR__ . '/../.env');
 
-$mg = Mailgun::create(getenv('MAILGUN_API_KEY'));
+$mg = Mailgun::create($_ENV['MAILGUN_API_KEY']);
 
 try {
   $mg->messages()->send('animalrightsmap.org', [
