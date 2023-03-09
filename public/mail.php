@@ -8,7 +8,7 @@ use Mailgun\Mailgun;
 $dotenv = new Dotenv();
 $dotenv->load(__DIR__ . '/../.env');
 
-$mg = Mailgun::create($_ENV['MAILGUN_API_KEY']);
+$mg = Mailgun::create($_ENV['MAILGUN_API_KEY'], 'https://api.eu.mailgun.net');
 
 try {
   $mg->messages()->send('animalrightsmap.org', [
