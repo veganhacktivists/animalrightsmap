@@ -57,7 +57,7 @@
       <a href="https://activisthub.org/">Track your Impact</a>
       <a href="https://veganhacktivists.org/grants">Get Funding</a>
       <button style="font-size: 18px;" onClick="openGroupSubmissionModal()">Submit a group</button>
-      <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
+      <a href="https://veganhacktivists.org/support" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
     </div>
 
     <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
@@ -69,7 +69,7 @@
 
       <a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
-      <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+      <a href="https://veganhacktivists.org/support" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
       </center>
     </div>
 
@@ -88,7 +88,7 @@
 
       <a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;color:#fff;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
-      <a href="https://www.patreon.com/veganhacktivists" target="_blank" style="display: contents;color:#fff;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+      <a href="https://veganhacktivists.org/support" target="_blank" style="display: contents;color:#fff;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
     </center>
   </div>
 
