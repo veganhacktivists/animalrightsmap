@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": "^8.3",
         "mailgun/mailgun-php": "^3.5",
         "symfony/http-client": "^5.3",
         "nyholm/psr7": "^1.4",
