@@ -1,2 +1,6 @@
 [phases.setup]
-nixpkgsArchive = 'be9e214982e20b8310878ac2baa063a961c1bdf6'
+nixpkgsArchive = '1ccb989efa04a28396fb644b6b5bf248f3ddcdec'
+nixPkgs = [
+  "...",
+  "nodejs_24"
+]
