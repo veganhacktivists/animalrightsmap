@@ -125,11 +125,9 @@ async function fetchGroups(backend) {
 }
 
 async function sendEmail (data) {
-  const result = await axios.request({
-    url: '/mail.php',
-    method: 'POST',
-    params: data,
-  });
+  // Send the raw form fields in the request body. The server fixes the
+  // recipient, sender and subject itself, so we never pass those from here.
+  const result = await axios.post('/mail.php', new URLSearchParams(data));
 
   if (result.data !== 'OK') {
     throw new Error(result.data);
@@ -161,17 +159,12 @@ async function openGroupSubmissionModal () {
 
         try {
           await sendEmail({
-            to: 'map@veganhacktivists.org',
-            from: email,
-            subject: 'New Group Submission',
-            html: `
-              <b>Name</b>: ${name}<br>
-              <b>Email</b>: ${email}<br>
-              <b>Group Name(s)</b>: ${groupNames}<br>
-              <b>Social Media Link(s)</b>: ${socialMediaLinks}<br>
-              <b>City/Region(s)</b>: ${regions}<br>
-              <b>Message</b>: ${message}<br>
-              `
+            name,
+            email,
+            groupNames,
+            socialMediaLinks,
+            regions,
+            message,
           });
 
         } catch (error) {
