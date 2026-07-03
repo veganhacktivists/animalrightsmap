@@ -125,11 +125,15 @@ async function fetchGroups(backend) {
 }
 
 async function sendEmail (data) {
-  return await axios.request({
+  const result = await axios.request({
     url: '/mail.php',
     method: 'POST',
     params: data,
-  })
+  });
+
+  if (result.data !== 'OK') {
+    throw new Error(result.data);
+  }
 }
 
 function displayError (error) {
@@ -171,11 +175,7 @@ async function openGroupSubmissionModal () {
           });
 
         } catch (error) {
-          if (error.response.data.message === "'from' parameter is not a valid address. please check documentation") {
-            displayError('The email you provided is not valid.');
-          } else {
-            displayError('Oops! Something went wrong. Try reaching us directly at map@veganhacktivists.org');
-          }
+          displayError('Oops! Something went wrong. Try reaching us directly at map@veganhacktivists.org');
         }
       }
     }
