@@ -147,7 +147,7 @@ async function openGroupSubmissionModal () {
       const form = document.getElementById("group-submission-form")
       if (!form.checkValidity()) {
         form.reportValidity()
-        displayError("The form is invalid ☹")
+        displayError('Please double-check your email address and make sure all required fields are filled in.');
 
       } else {
         const name = document.getElementById('name').value
