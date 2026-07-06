@@ -11,8 +11,40 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') {
 
 require '../vendor/autoload.php';
 
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Component\RateLimiter\RateLimiterFactory;
+use Symfony\Component\RateLimiter\Storage\CacheStorage;
 use Mailgun\Mailgun;
+
+// 5 accepted POSTs per 10 minutes per IP, keyed by client IP.
+// X-Forwarded-For is trusted because all traffic enters through Traefik.
+$factory = new RateLimiterFactory(
+    [
+        'id'       => 'mail_submission',
+        'policy'   => 'sliding_window',
+        'limit'    => 5,
+        'interval' => '10 minutes',
+    ],
+    new CacheStorage(new FilesystemAdapter('arm-mail-ratelimit', 0, sys_get_temp_dir()))
+);
+
+$ip = 'unknown';
+if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $parts = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
+    $ip = end($parts);
+} elseif (isset($_SERVER['REMOTE_ADDR'])) {
+    $ip = $_SERVER['REMOTE_ADDR'];
+}
+
+$limit = $factory->create($ip)->consume();
+
+if (!$limit->isAccepted()) {
+    http_response_code(429);
+    header('Retry-After: '.max(0, $limit->getRetryAfter()->getTimestamp() - time()));
+    echo json_encode('Too Many Requests');
+    exit;
+}
 
 try {
     // Load environmental variables (only needed locally)
