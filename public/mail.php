@@ -92,7 +92,7 @@ try {
 
     echo json_encode('OK');
 
-} catch (\Exception $exception) {
+} catch (\Throwable $exception) {
     // Log detail server-side; never leak it to the client.
     error_log('mail.php: '.$exception->getMessage());
     http_response_code(500);
