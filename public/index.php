@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150398169-2"></script>
   <script>
@@ -14,6 +16,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Animal Rights Activism Map - The largest map of animal rights organization groups!</title>
+  <meta name="description" content="Browse the largest collection of animal rights activist groups from around the world, all in one single map. Find a local group near you or submit your own — a free tool by the Vegan Hacktivists.">
+  <link rel="canonical" href="https://animalrightsmap.org/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://animalrightsmap.org/">
+  <meta property="og:title" content="Animal Rights Activism Map">
+  <meta property="og:description" content="Browse the largest collection of animal rights activist groups from around the world, all in one single map.">
+  <meta property="og:image" content="https://animalrightsmap.org/logo.png">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Animal Rights Map",
+    "url": "https://animalrightsmap.org/",
+    "description": "The largest map of animal rights activist groups from around the world.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vegan Hacktivists",
+      "url": "https://veganhacktivists.org/"
+    }
+  }
+  </script>
 
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -50,7 +76,7 @@
 
 <body>
   <div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
-    <img src="/logo.png" alt="Animal Rights Map" style="width: 100%;margin-bottom: -5px;">
+    <h1 style="margin: 0; font-size: inherit;"><img src="/logo.png" alt="Animal Rights Map" style="width: 100%;margin-bottom: -5px;"></h1>
 
     <div class="sidebarlinks">
       <a href="https://animalrightsmap.org">Home</a>
