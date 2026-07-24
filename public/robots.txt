@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /mail.php
+
+Sitemap: https://animalrightsmap.org/sitemap.xml
