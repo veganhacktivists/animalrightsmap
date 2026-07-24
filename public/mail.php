@@ -10,6 +10,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST') {
 }
 
 require '../vendor/autoload.php';
+require __DIR__.'/../src/submission.php';
 
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Dotenv\Dotenv;
@@ -29,15 +30,7 @@ $factory = new RateLimiterFactory(
     new CacheStorage(new FilesystemAdapter('arm-mail-ratelimit', 0, sys_get_temp_dir()))
 );
 
-$ip = 'unknown';
-if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    $parts = array_map('trim', explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']));
-    $ip = end($parts);
-} elseif (isset($_SERVER['REMOTE_ADDR'])) {
-    $ip = $_SERVER['REMOTE_ADDR'];
-}
-
-$limit = $factory->create($ip)->consume();
+$limit = $factory->create(arm_client_ip($_SERVER))->consume();
 
 if (!$limit->isAccepted()) {
     http_response_code(429);
@@ -57,37 +50,22 @@ try {
     // Collect the submitted fields. The recipient, sender and subject are fixed
     // server-side: this endpoint can only ever deliver a group submission to us,
     // never relay arbitrary mail to arbitrary recipients.
-    $name             = trim($_POST['name'] ?? '');
-    $email            = trim($_POST['email'] ?? '');
-    $groupNames       = trim($_POST['groupNames'] ?? '');
-    $socialMediaLinks = trim($_POST['socialMediaLinks'] ?? '');
-    $regions          = trim($_POST['regions'] ?? '');
-    $message          = trim($_POST['message'] ?? '');
+    $fields = arm_validate_submission($_POST);
 
-    $validEmail = filter_var($email, FILTER_VALIDATE_EMAIL);
-    if ($name === '' || $validEmail === false || $groupNames === '' || $socialMediaLinks === '' || $regions === '') {
+    if ($fields === null) {
         http_response_code(400);
         echo json_encode('Invalid submission');
         exit;
     }
-
-    // Escape every user-supplied value before placing it in the HTML body.
-    $escape = fn ($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
-    $html = '<b>Name</b>: '.$escape($name).'<br>'
-        .'<b>Email</b>: '.$escape($validEmail).'<br>'
-        .'<b>Group Name(s)</b>: '.$escape($groupNames).'<br>'
-        .'<b>Social Media Link(s)</b>: '.$escape($socialMediaLinks).'<br>'
-        .'<b>City/Region(s)</b>: '.$escape($regions).'<br>'
-        .'<b>Message</b>: '.nl2br($escape($message)).'<br>';
 
     $mg = Mailgun::create($_ENV['MAILGUN_API_KEY'], 'https://api.eu.mailgun.net');
 
     $mg->messages()->send('animalrightsmap.org', [
         'from'       => 'Animal Rights Map <noreply@animalrightsmap.org>',
         'to'         => 'map@veganhacktivists.org',
-        'h:Reply-To' => $validEmail,
+        'h:Reply-To' => $fields['email'],
         'subject'    => 'New Group Submission',
-        'html'       => $html,
+        'html'       => arm_submission_html($fields),
     ]);
 
     echo json_encode('OK');

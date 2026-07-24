@@ -10,12 +10,12 @@ class MailEndpointTest extends TestCase
 
     public static function setUpBeforeClass(): void
     {
-        if (file_exists(__DIR__.'/../.env')) {
+        if (file_exists(__DIR__.'/../../.env')) {
             self::markTestSkipped('A .env file is present; tests would send real mail.');
         }
 
         self::$server = proc_open(
-            ['php', '-d', 'display_errors=0', '-S', self::HOST, '-t', __DIR__.'/../public'],
+            ['php', '-d', 'display_errors=0', '-S', self::HOST, '-t', __DIR__.'/../../public'],
             [1 => ['file', '/dev/null', 'w'], 2 => ['file', '/dev/null', 'w']],
             $pipes
         );
