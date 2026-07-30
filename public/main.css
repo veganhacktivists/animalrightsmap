@@ -55,7 +55,8 @@
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  /* PT Sans is the paragraph face on veganhacktivists.org */
+  font-family: "PT Sans", sans-serif;
 }
 
 .footermobile {
