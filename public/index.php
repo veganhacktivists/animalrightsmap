@@ -106,7 +106,7 @@
 
   <div class="content" style="padding:0px;overflow:hidden">
     <div id="ahmap" allowfullscreen style="display:none;height: 100%"></div>
-    <iframe id="umap" width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=false&embedControl=null&datalayersControl=expanded&onLoadPanel=none&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+    <iframe id="umap" width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=false&embedControl=false&printControl=false&datalayersControl=expanded&onLoadPanel=none&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
   </div>
 
   <div class="footermobile" style="background-color: #272525;">
