@@ -42,6 +42,11 @@
   </script>
 
   <link rel="shortcut icon" href="favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -80,22 +85,20 @@
 
     <div class="sidebarlinks">
       <a href="https://animalrightsmap.org">Home</a>
-      <a href="https://activisthub.org/">Track your Impact</a>
-      <a href="https://veganhacktivists.org/grants">Get Funding</a>
       <button style="font-size: 18px;" onClick="openGroupSubmissionModal()">Submit a group</button>
-      <a href="https://veganhacktivists.org/support" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
+      <a href="https://veganhacktivists.org/donate" target="_blank" style="padding: 10px 16px 12px 16px;">♡ Donate</a>
     </div>
 
     <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
 
     <div class="footer"><center>
-      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 100px;"></a>
+      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 160px;"></a>
 
-      <p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;" target="_blank"><u>Vegan Hacktivists</u></p></a>
+      <p style="background-color: #272525 !important; line-height: 15px;color: white;">Built by <a href="https://veganhacktivists.org/" style="background-color: #272525;color: white;" target="_blank"><u>Vegan Hacktivists</u></a></p>
 
       <a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
-      <a href="https://veganhacktivists.org/support" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+      <a href="https://veganhacktivists.org/donate" target="_blank" style="display: contents;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
       </center>
     </div>
 
@@ -103,18 +106,18 @@
 
   <div class="content" style="padding:0px;overflow:hidden">
     <div id="ahmap" allowfullscreen style="display:none;height: 100%"></div>
-    <iframe id="umap" width="100%" height="300px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=false&embedControl=null&datalayersControl=expanded&onLoadPanel=caption&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+    <iframe id="umap" width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/animal-rights-map_487135?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=true&tilelayersControl=false&embedControl=null&datalayersControl=expanded&onLoadPanel=none&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
   </div>
 
   <div class="footermobile" style="background-color: #272525;">
     <center>
-      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo-mobile.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 100px;"></a>
+      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 160px;"></a>
 
-      <p style="background-color: #272525 !important; line-height: 15px;color: white;">A project by the <a href="https://veganhacktivists.org/" style="background-color: #272525;color:#fff;" target="_blank"><u>Vegan Hacktivists</u></p></a>
+      <p style="background-color: #272525 !important; line-height: 15px;color: white;">Built by <a href="https://veganhacktivists.org/" style="background-color: #272525;color:#fff;" target="_blank"><u>Vegan Hacktivists</u></a></p>
 
       <a href="https://www.instagram.com/veganhacktivists/" target="_blank" style="display: contents;color:#fff;"><i class="fab fa-instagram" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
 
-      <a href="https://veganhacktivists.org/support" target="_blank" style="display: contents;color:#fff;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
+      <a href="https://veganhacktivists.org/donate" target="_blank" style="display: contents;color:#fff;"><i class="fas fa-heart" style="font-size:30px;padding-right: 10px;padding-bottom: 20px;"></i></a>
     </center>
   </div>
 
