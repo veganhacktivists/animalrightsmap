@@ -81,7 +81,7 @@
 
 <body>
   <div class="sidebar" style="background-color: #272525;overflow-x: hidden; /* Hide horizontal scrollbar */">
-    <h1 style="margin: 0; font-size: inherit;"><img src="/logo.png" alt="Animal Rights Map" style="width: 100%;margin-bottom: -5px;"></h1>
+    <h1 style="margin: 0;"><img src="/logo.png" alt="Animal Rights Map" style="display: block;width: 100%;"></h1>
 
     <div class="sidebarlinks">
       <a href="https://animalrightsmap.org">Home</a>
