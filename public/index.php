@@ -92,7 +92,7 @@
     <p style="padding: 13px;color: white;line-height: 27px;text-align:center;">Browse the largest collection of animal rights activist groups from around the world, all in one single map! </p>
 
     <div class="footer"><center>
-      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 160px;"></a>
+      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 10px;width: 120px;"></a>
 
       <p style="background-color: #272525 !important; line-height: 15px;color: white;">Built by <a href="https://veganhacktivists.org/" style="background-color: #272525;color: white;" target="_blank"><u>Vegan Hacktivists</u></a></p>
 
@@ -111,7 +111,7 @@
 
   <div class="footermobile" style="background-color: #272525;">
     <center>
-      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 25px;width: 160px;"></a>
+      <a href="https://veganhacktivists.org/" target="_blank" style="padding: 0px 16px 5px 16px;background-color: #272525;"><img src="/vh-logo.png" alt="Vegan Hacktivists" style="padding-top: 10px;width: 120px;"></a>
 
       <p style="background-color: #272525 !important; line-height: 15px;color: white;">Built by <a href="https://veganhacktivists.org/" style="background-color: #272525;color:#fff;" target="_blank"><u>Vegan Hacktivists</u></a></p>
 
