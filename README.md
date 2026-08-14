@@ -13,4 +13,13 @@ own!
 
 ## Setup
 
-See the [Vegan Hacktivists documentation](https://github.com/veganhacktivists/documentation).
+Requires PHP 8.4 and [Composer](https://getcomposer.org).
+
+```
+composer install
+cp .env.example .env
+php -S localhost:8000 -t public
+```
+
+`MAILGUN_API_KEY` is only needed by the group submission form. Run the tests
+with `vendor/bin/phpunit`.
