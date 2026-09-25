@@ -3,15 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150398169-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-150398169-2');
-  </script>
+  <script defer src="https://analytics.veganhacktivists.org/script.js" data-website-id="08a08d52-88f1-436d-b0d2-9b5f16da0108"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
