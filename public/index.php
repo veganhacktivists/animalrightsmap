@@ -42,27 +42,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""/>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css"
-      integrity="sha384-lPzjPsFQL6te2x+VxmV6q1DpRxpRk0tmnl2cpwAO5y04ESyc752tnEWPKDfl1olr"
-      crossorigin=""/>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css"
-      integrity="sha384-5kMSQJ6S4Qj5i09mtMNrWpSi8iXw230pKU76xTmrpezGnNJQzj0NzXjQLLg+jE7k"
-      crossorigin=""/>
-
   <script src="https://unpkg.com/axios@0.21.4/dist/axios.min.js"
       integrity="sha256-DVQ37PYX3vJRSJgdfRDBKog6O3HoUVA812fyGtiutRU="
       crossorigin=""></script>
   <script src="https://unpkg.com/sweetalert2@11.1.6/dist/sweetalert2.all.min.js"
       integrity="sha256-rchCQnaUfNYpykQA/4sXEQNe7eOSc8mmoGauwzRfqHQ="
-      crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"
-      integrity="sha384-RLIyj5q1b5XJTn0tqUhucRZe40nFTocRP91R/NkRJHwAe4XxnTV77FXy/vGLiec2"
       crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
@@ -97,7 +81,6 @@
   </div>
 
   <div class="content" style="padding:0px;overflow:hidden">
-    <div id="ahmap" allowfullscreen style="display:none;height: 100%"></div>
     <iframe id="umap" width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/en/map/animalrightsmap_1440245?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=false&searchControl=true&tilelayersControl=false&embedControl=false&printControl=false&datalayersControl=expanded&onLoadPanel=none&captionBar=false&fullscreenControl=false&locateControl=true&measureControl=false" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
   </div>
 
